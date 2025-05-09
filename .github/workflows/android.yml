@@ -1,4 +1,3 @@
-
 name: Android CI
 
 on:
@@ -24,6 +23,10 @@ jobs:
 
       - name: 📱 إعداد بيئة Android SDK
         uses: android-actions/setup-android@v2
+
+      - name: 📝 إنشاء ملف local.properties
+        run: |
+          echo "sdk.dir=$ANDROID_HOME" > ./local.properties
 
       - name: 🔐 منح الأذونات لـ Gradle
         run: chmod +x gradlew
