@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appname">OnRoadFue</string>
+    <string name="appname">وقود الطريق</string>
     <array name="types">
-        <item>SELECT</item>
-        <item>USER</item>
-        <item>BUNK</item>
+        <item>مستخدم</item>
+        <item>محطة</item>
+        <item>مسؤول</item>
     </array>
-
 </resources>
