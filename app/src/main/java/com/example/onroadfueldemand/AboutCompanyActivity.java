@@ -1,4 +1,16 @@
 package com.example.onroadfueldemand;
+
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 public class AboutCompanyActivity extends AppCompatActivity {
 
     @Override
@@ -7,47 +19,30 @@ public class AboutCompanyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about_company);
 
         // إعداد زر العودة
-        setupActionBar();
-
-        // تهيئة الروابط والأزرار
-        setupSocialLinks();
-        setupCallButton();
-        setupDownloadButton();
-    }
-
-    private void setupActionBar() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setTitle("عن الشركة");
         }
-    }
 
-    private void setupSocialLinks() {
-        // الفيسبوك
+        // تعريف العناصر
         TextView facebook = findViewById(R.id.tv_facebook);
-        facebook.setOnClickListener(v -> openUrl("https://www.facebook.com/profile.php?id=61561480315484"));
-
-        // تويتر (تحديد الرابط عند إضافته)
         TextView twitter = findViewById(R.id.tv_twitter);
-        twitter.setOnClickListener(v -> openUrl("https://twitter.com/YourTwitterLink"));
-
-        // يوتيوب (تحديد الرابط عند إضافته)
         TextView youtube = findViewById(R.id.tv_youtube);
+        Button btnCall = findViewById(R.id.btn_call);
+        Button btnDownload = findViewById(R.id.tv_download);
+
+        // أحداث النقر
+        facebook.setOnClickListener(v -> openUrl("https://www.facebook.com/profile.php?id=61561480315484"));
+        twitter.setOnClickListener(v -> openUrl("https://twitter.com/YourTwitterLink"));
         youtube.setOnClickListener(v -> openUrl("https://youtube.com/YourYouTubeChannel"));
+        btnCall.setOnClickListener(v -> dialPhoneNumber());
+        btnDownload.setOnClickListener(v -> openUrl("https://example.com/download-brochure"));
     }
 
-    private void setupCallButton() {
-        Button callButton = findViewById(R.id.btn_call);
-        callButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_DIAL);
-            intent.setData(Uri.parse("tel:734953951"));
-            startActivity(intent);
-        });
-    }
-
-    private void setupDownloadButton() {
-        Button downloadButton = findViewById(R.id.tv_download);
-        downloadButton.setOnClickListener(v -> openUrl("https://example.com/download-brochure"));
+    private void dialPhoneNumber() {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:734953951"));
+        startActivity(intent);
     }
 
     private void openUrl(String url) {
@@ -59,7 +54,6 @@ public class AboutCompanyActivity extends AppCompatActivity {
         }
     }
 
-    // التعامل مع زر العودة
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
@@ -69,7 +63,6 @@ public class AboutCompanyActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // إضافة انتقالات عند العودة
     @Override
     public void onBackPressed() {
         super.onBackPressed();
