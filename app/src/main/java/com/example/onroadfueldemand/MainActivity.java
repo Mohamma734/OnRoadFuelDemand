@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,18 +21,36 @@ public class MainActivity extends AppCompatActivity {
         admin = findViewById(R.id.admin);
         bunk = findViewById(R.id.bunk);
 
-        user.setOnClickListener(v -> openLogin("user"));
-        admin.setOnClickListener(v -> openLogin("admin"));
-        bunk.setOnClickListener(v -> openLogin("bunk"));
+        // الطريقة الأصلية (بدون لامبدا)
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Login.class);
+                i.putExtra("key", "user");
+                startActivity(i);
+            }
+        });
+
+        admin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Login.class);
+                i.putExtra("key", "admin");
+                startActivity(i);
+            }
+        });
+
+        bunk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Login.class);
+                i.putExtra("key", "bunk");
+                startActivity(i);
+            }
+        });
     }
 
-    private void openLogin(String userType) {
-        Intent intent = new Intent(this, Login.class);
-        intent.putExtra("key", userType);
-        startActivity(intent);
-    }
-
-    // إظهار القائمة (الثلاث نقاط)
+    // إضافة القائمة (الثلاث نقاط)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -46,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.action_about_company) {
             Intent intent = new Intent(this, AboutCompanyActivity.class);
             startActivity(intent);
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             return true;
         }
         return super.onOptionsItemSelected(item);
