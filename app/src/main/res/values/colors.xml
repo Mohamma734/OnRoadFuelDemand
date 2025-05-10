@@ -12,4 +12,8 @@
     <color name="scarletRed">#FF2400</color>
     <color name="mintGreen">#3EB489</color>
     <color name="strikingPink">#FFC5F3</color>
+    
+    <!-- الألوان المضافة حديثًا -->
+    <color name="blue">#2196F3</color>
+    <color name="primary_color">#2E7D32</color>
 </resources>
