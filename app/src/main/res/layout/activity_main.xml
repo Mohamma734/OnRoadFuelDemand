@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- إضافة Toolbar -->
+    <!-- التولبار -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -15,37 +16,64 @@
         app:title="Fuel Demand"
         app:titleTextColor="@android:color/white"/>
 
+    <!-- العنوان -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="348dp"
         android:layout_height="49dp"
         android:layout_below="@id/toolbar"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
         android:text="ON ROAD FUEL DEMAND"
-        android:textAlignment="center"
         android:textColor="@color/teal_700"
         android:textSize="30sp" />
 
-    <!-- بقية العناصر بدون تغيير -->
+    <!-- زر USER -->
     <Button
         android:id="@+id/user"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
         android:layout_marginStart="90dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="90dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="USER"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
 
-    <!-- ... العناصر الأخرى ... -->
+    <!-- زر BUNK -->
+    <Button
+        android:id="@+id/bunk"  <!-- تأكد من الـ ID هنا -->
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="BUNK"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <!-- زر ADMIN -->
+    <Button
+        android:id="@+id/admin"  <!-- تأكد من الـ ID هنا -->
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bunk"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="ADMIN"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
 
 </RelativeLayout>
