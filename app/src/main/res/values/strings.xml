@@ -1,134 +1,134 @@
 <resources>
-    <string name="app_name">FUEL DROP</string>
-    <string name="title_activity_login_user">LoginActivityUser</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="app_name">توصيل الوقود</string>
+    <string name="title_activity_login_user">تسجيل الدخول للمستخدم</string>
+    <string name="prompt_email">البريد الإلكتروني</string>
+    <string name="prompt_password">كلمة المرور</string>
+    <string name="action_sign_in">تسجيل الدخول أو التسجيل</string>
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+    <string name="welcome">"مرحبًا!"</string>
+    <string name="invalid_username">اسم مستخدم غير صالح</string>
+    <string name="invalid_password">يجب أن تتكون كلمة المرور من أكثر من 5 أحرف</string>
+    <string name="login_failed">"فشل تسجيل الدخول"</string>
 
+    <string name="action_settings">الإعدادات</string>
+    <string name="create_bunk">إنشاء محطة وقود</string>
+    <string name="update_bunk">تحديث محطة الوقود</string>
+    <string name="booking_status">حالة الحجز</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="create_bunk">CREATE BUNK</string>
-    <string name="update_bunk">UPDATE BUNK</string>
-    <string name="booking_status">BOOKING STATUS</string>
+    <!-- قيم صفحة تسجيل الدخول -->
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="signup">إنشاء حساب جديد</string>
+    <string name="or">--أو--</string>
+    <string name="login">تسجيل الدخول</string>
 
-    <!-- Login page values -->
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="forgot_password">Forget your Password?</string>
-    <string name="signup">SignUP</string>
-    <string name="or">--OR--</string>
-    <string name="login">Login</string>
-
-    <!-- Values Related to Back4App -->
+    <!-- القيم المتعلقة بـ Back4App -->
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
     <string name="back4app_app_id">peROutvpqDlCgNdgiNetp9Hxbq7I0mrO9opwnyHX</string>
     <string name="back4app_client_key">Q7UfdIiC2thrVXAIWECSWESksiUCyJ5SKhi0wV0t</string>
 
-    <!-- User registration details values -->
-    <string name="label">REGISTRATION</string>
-    <string name="name">Enter Name</string>
-    <string name="address">Enter Address</string>
-    <string name="phone">Enter Contact Number</string>
-    <string name="email">Enter Email</string>
-    <string name="cpassword">Confirm Password</string>
-    <string name="location">Select bunk location</string>
-    <string name="checkbox"> agree to terms and condtions</string>
-    <string name="title_activity_register_map">Register_map</string>
+    <!-- قيم تسجيل المستخدم -->
+    <string name="label">التسجيل</string>
+    <string name="name">أدخل الاسم</string>
+    <string name="address">أدخل العنوان</string>
+    <string name="phone">أدخل رقم الهاتف</string>
+    <string name="email">أدخل البريد الإلكتروني</string>
+    <string name="cpassword">تأكيد كلمة المرور</string>
+    <string name="location">اختر موقع محطة الوقود</string>
+    <string name="checkbox">أوافق على الشروط والأحكام</string>
+    <string name="title_activity_register_map">تسجيل الموقع</string>
 
-    <!-- ADMIN HOME PAGE-->
-    <string name="adminHome">HOME</string>
-    <string name="adminLogout">LOGOUT</string>
-    <string name="adminProfile">PROFILE</string>
-    <string name="adminBunk">BUNK REQUESTS</string>
+    <!-- الصفحة الرئيسية للمسؤول -->
+    <string name="adminHome">الرئيسية</string>
+    <string name="adminLogout">تسجيل الخروج</string>
+    <string name="adminProfile">الملف الشخصي</string>
+    <string name="adminBunk">طلبات محطات الوقود</string>
 
-    <!-- USER HOME PAGE -->
-    <string name="userHome">HOME</string>
-    <string name="userLogout">LOGOUT</string>
-    <string name="userProfile">PROFILE</string>
-    <string name="userFuelOrder">ORDER FUEL</string>
-    <string name="userStatus">CHECK STATUS</string>
-    <string name="userHistory">ORDER HISTORY</string>
+    <!-- الصفحة الرئيسية للمستخدم -->
+    <string name="userHome">الرئيسية</string>
+    <string name="userLogout">تسجيل الخروج</string>
+    <string name="userProfile">الملف الشخصي</string>
+    <string name="userFuelOrder">طلب الوقود</string>
+    <string name="userStatus">التحقق من الحالة</string>
+    <string name="userHistory">سجل الطلبات</string>
 
-    <!-- Profile -->
-    <string name="profileName">Name</string>
-    <string name="profileEmail">Email</string>
-    <string name="profileContact">Contact</string>
-    <string name="profileUsername">Username</string>
+    <!-- الملف الشخصي -->
+    <string name="profileName">الاسم</string>
+    <string name="profileEmail">البريد الإلكتروني</string>
+    <string name="profileContact">جهة الاتصال</string>
+    <string name="profileUsername">اسم المستخدم</string>
 
-    <!--BUNK HOME PAGE-->
-    <string name="bunkHome">HOME</string>
-    <string name="bunkLogout">LOGOUT</string>
-    <string name="bunkProfile">PROFILE</string>
-    <string name="bunkOrderRequest">ORDERS</string>
-    <string name="bunkOrderHistory">HISTORY</string>
-    <string name="bunkUpdate">UPDATES</string>
+    <!-- الصفحة الرئيسية لمحطة الوقود -->
+    <string name="bunkHome">الرئيسية</string>
+    <string name="bunkLogout">تسجيل الخروج</string>
+    <string name="bunkProfile">الملف الشخصي</string>
+    <string name="bunkOrderRequest">الطلبات</string>
+    <string name="bunkOrderHistory">السجل</string>
+    <string name="bunkUpdate">التحديثات</string>
 
+    <!-- صفحة تفاصيل الطلب -->
+    <string name="orderHeading">تفاصيل الطلب</string>
+    <string name="orderID">رقم الطلب</string>
+    <string name="orderBunkName">اسم محطة الوقود</string>
+    <string name="orderBunkContact">جهة اتصال محطة الوقود</string>
+    <string name="orderCustomerName">اسم العميل</string>
+    <string name="orderCustomerContact">جهة اتصال العميل</string>
+    <string name="orderFuelType">نوع الوقود</string>
+    <string name="orderFuelQuantity">الكمية</string>
+    <string name="orderFuelPrice">السعر</string>
+    <string name="orderTotal">المبلغ الإجمالي</string>
+    <string name="orderButton">إتمام الطلب</string>
 
-    <!-- Order Details Page -->
-    <string name="orderHeading">ORDER DETAILS</string>
-    <string name="orderID">Order ID</string>
-    <string name="orderBunkName">Bunk Name</string>
-    <string name="orderBunkContact">Bunk Contact</string>
-    <string name="orderCustomerName">Customer Name</string>
-    <string name="orderCustomerContact">Customer Contact</string>
-    <string name="orderFuelType">Fuel Type</string>
-    <string name="orderFuelQuantity">Quantity</string>
-    <string name="orderFuelPrice">Price</string>
-    <string name="orderTotal">Total Amount</string>
-    <string name="orderButton">PLACE ORDER</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- النصوص الافتراضية -->
+    <string name="hello_blank_fragment">مرحبا، هذا جزء فارغ</string>
 
-    <!-- string array for fuel type-->
+    <!-- قائمة أنواع الوقود -->
     <string-array name="fuelType">
-        <item>Petrol</item>
-        <item>Diesel</item>
-        <item>Petrol &amp; Diesel</item>
+        <item>بنزين</item>
+        <item>ديزل</item>
+        <item>بنزين &amp; ديزل</item>
     </string-array>
 
-    <!-- string array for fuel avaialability-->
+    <!-- توفر الوقود -->
     <string-array name="fuelAvailable">
-        <item>Available</item>
-        <item>UnAvailable</item>
-        <item>Self Service</item>
+        <item>متاح</item>
+        <item>غير متاح</item>
+        <item>خدمة ذاتية</item>
     </string-array>
 
-    <!-- Bunk Update Activity-->
-    <string name="fuelType">Select Fuel Type</string>
-    <string name="petrolPrice">Petrol Price</string>
-    <string name="dieselPrice">Diesel Price</string>
-    <string name="fuelAvail">Service Availability</string>
-    <string name="updateButton">UPDATE</string>
+    <!-- تحديث محطة الوقود -->
+    <string name="fuelType">اختر نوع الوقود</string>
+    <string name="petrolPrice">سعر البنزين</string>
+    <string name="dieselPrice">سعر الديزل</string>
+    <string name="fuelAvail">توفر الخدمة</string>
+    <string name="updateButton">تحديث</string>
 
-    <!-- Bunk Request -->
-    <string name="bunkRequestUpdate">UPDATE</string>
-    <string name="bunkRequestReject">REJECT</string>
-    <string name="bunkRequestStatus">Update Status</string>
+    <!-- طلبات محطة الوقود -->
+    <string name="bunkRequestUpdate">تحديث</string>
+    <string name="bunkRequestReject">رفض</string>
+    <string name="bunkRequestStatus">تحديث الحالة</string>
 
-    <!-- string array for bunk order updation-->
+    <!-- تحديث طلب محطة الوقود -->
     <string-array name="bunkRequestUpdate">
-        <item>Pending</item>
-        <item>Accept</item>
-        <item>Reject</item>
-        <item>Delivered</item>
+        <item>قيد التنفيذ</item>
+        <item>مقبول</item>
+        <item>مرفوض</item>
+        <item>تم التسليم</item>
     </string-array>
 
-    <!-- string array for admin bunk request update -->
+    <!-- تحديث طلب المسؤول -->
     <string-array name="adminRequestUpdate">
-        <item>Pending</item>
-        <item>Accept</item>
-        <item>Reject</item>
+        <item>قيد التنفيذ</item>
+        <item>مقبول</item>
+        <item>مرفوض</item>
     </string-array>
 
-    <!-- order Details fuelType -->
+    <!-- تفاصيل الطلب ونوع الوقود -->
     <string-array name="orderDetailsFuelType">
-        <item>Petrol</item>
-        <item>Diesel</item>
+        <item>بنزين</item>
+        <item>ديزل</item>
     </string-array>
-    <string name="title_activity_maps_user">MapsActivityUser</string>
+
+    <string name="title_activity_maps_user">خريطة المستخدم</string>
 </resources>
