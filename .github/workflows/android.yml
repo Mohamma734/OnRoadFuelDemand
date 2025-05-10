@@ -1,4 +1,3 @@
-
 name: Android CI
 
 on:
@@ -40,10 +39,26 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
+      - name: 🔍 تشغيل تحليل الكود (Lint)
+        run: ./gradlew lint --stacktrace
+
+      - name: 🧪 تشغيل الاختبارات (Unit Tests)
+        run: ./gradlew test --stacktrace
+
       - name: 🛠️ تشغيل البناء مع تحليل الأخطاء
         run: |
-          ./gradlew assembleDebug --stacktrace --no-daemon || ./gradlew clean && ./gradlew assembleDebug
-        continue-on-error: true
+          ./gradlew assembleDebug --stacktrace --no-daemon || (echo "❌ فشل البناء، راجع الأخطاء أعلاه!" && exit 1)
+
+      - name: 📜 حفظ سجل الأخطاء عند الفشل
+        if: failure()
+        run: |
+          adb logcat -d > logcat_errors.txt || echo "لا يوجد سجل أخطاء."
+
+      - name: 📤 رفع ملف سجل الأخطاء
+        uses: actions/upload-artifact@v4
+        with:
+          name: logcat-errors
+          path: logcat_errors.txt
 
       - name: 📤 رفع ملف APK بعد نجاح البناء
         uses: actions/upload-artifact@v4
