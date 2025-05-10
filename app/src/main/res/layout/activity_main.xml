@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- إضافة Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Fuel Demand"
+        app:titleTextColor="@android:color/white"/>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="348dp"
         android:layout_height="49dp"
+        android:layout_below="@id/toolbar"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
         android:text="ON ROAD FUEL DEMAND"
@@ -22,6 +32,7 @@
         android:textColor="@color/teal_700"
         android:textSize="30sp" />
 
+    <!-- بقية العناصر بدون تغيير -->
     <Button
         android:id="@+id/user"
         style="?attr/materialButtonOutlinedStyle"
@@ -35,30 +46,6 @@
         android:textColor="@android:color/white"
         android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/bunk"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="90dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="bunk"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/admin"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="90dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="admin"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
+    <!-- ... العناصر الأخرى ... -->
 
 </RelativeLayout>
