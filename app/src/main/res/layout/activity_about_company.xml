@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- العنوان الرئيسي -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المحمدي"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- وصف الشركة -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أكبر خدمة توصيل ديزل في اليمن ؛ احجز طلب بالجملة الآن"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+        <!-- فقرة عن الشركة -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="المحمدي هو تطبيق خاص بخدمة توصيل الوقود عند الطلب. نحن نخدم عملاء الشركات الوقود على أساس منتظم. هدفنا هو تحويل صناعة يكون فيها السرقة والغش من القواعد المقبولة. من خلال ميزات التكنولوجيا المتقدمة الخاصة بنا ، سنحقق السلامة والشفافية والراحة في عملية التسليم."
+            android:layout_marginTop="16dp"/>
+
+        <!-- كيف تعمل -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="كيف تعمل"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="قم بتنزيل تطبيقنا ، واطلب طلبًا ، واحصل على الوقود حتى عتبة داركم!\n\n1. قم بتنزيل التطبيق\n2. أخبرنا أين أنت\n3. أدخل الكمية والوقت\n4. ادفع و ضع طلبك"
+            android:layout_marginTop="8dp"/>
+
+        <!-- المنتجات والخدمات -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="منتجاتنا وخدماتنا"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خدمات توصيل الوقود وحلول تخزين الوقود عند الطلب.\n\nتوصيل الوقود: اليمن مع التحدي الفريد المتمثل في إمداد الطاقة غير المنقطع يتطلب أكثر من 20 مليون ساكن. وهذا يدفع أكثر من 20 مليون مجمع سكني وتجاري للعمل على المولدات الاحتياطية. للتزود بالوقود ، يحمل المستخدمون أوعية أو براميل لشراء الديزل من محطات الوقود ونقله بشكل غير آمن إلى المواقع التي يتم فيها تركيب المولدات. بالإضافة إلى ذلك ، يقومون بتخزين الديزل وتخزينه لاستخدامه في المستقبل لتجنب متاعب الشراء المتكرر ونقل الوقود ، وهو أمر غير آمن."
+            android:layout_marginTop="8dp"/>
+
+        <!-- الفوائد -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="فوائد:"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. وقود لأي مولدات\n2. تقليل الحاجة لتخزين الوقود في الموقع\n3. القضاء على تسرب الوقود\n4. القضاء على سرقة الوقود\n5. مراقبة استهلاك الوقود\n6. القضاء على سوء استخدام بطاقات الأسطول\n7. قل لا للمصالحة اليدوية"
+            android:layout_marginTop="8dp"/>
+
+        <!-- الكتيب -->
+        <Button
+            android:id="@+id/tv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تنزيل الكتيب"
+            android:layout_marginTop="24dp"/>
+
+        <!-- تفاصيل الأصول -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="جميع تفاصيل الأصول على منصة واحدة:"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="يمكن لعملائنا مراقبة استهلاكهم للوقود ، وتحليل استخدامهم للوقود ، وإنشاء تقارير لأغراض المراجعة والميزنة ، ومجموعة كبيرة من الميزات الأخرى لتجنب التسوية اليدوية والمحاسبة دون أي تكلفة إضافية !!"
+            android:layout_marginTop="8dp"/>
+
+        <!-- ما هو المحمدي -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ما هو المحمدي؟"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="المحمدي هي عبارة عن منصة عبر الإنترنت لتوفير توصيل الوقود عند الباب بطريقة آمنة وموثوقة وفعالة. يمكنك تقديم طلبك عبر الإنترنت والحصول على الوقود في موقعك في إعادة تزويد بالوقود متخصصين (ناقلات وقود) وفقًا للجدول الزمني الذي اخترته. نحن نجعل التزود بالوقود أكثر ذكاء!"
+            android:layout_marginTop="8dp"/>
+
+        <!-- المناطق -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="المجالات التي يخدمها المحمدي:"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صنعاء، عدن، تعز، حضرموت، أبين، الحديدة، البيضاء، ذمار، شبوة، المهرة، الجوف، صعدة، عمران، لحج، مأرب، الضالع، سقطرى."
+            android:layout_marginTop="8dp"/>
+
+        <!-- مصدر الوقود -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مصدر الوقود:"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تقوم شركة المحمدي بتوفير الوقود من تجار معتمدين ومختارين من شركات النفط بالقرب من موقعك. نحن نتبع برنامجًا صارمًا لضمان الجودة لضمان فحص كل قطرة وقود للتأكد من جودتها قبل تحميلها في موردي الوقود لدينا للتسليم."
+            android:layout_marginTop="8dp"/>
+
+        <!-- رسوم التوصيل -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رسوم التوصيل:"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="يتم تسليم الوقود بنفس التكلفة المتوفرة في مدينتك بالإضافة إلى رسوم توصيل رمزية. نفرض رسوم توصيل قدرها 199 دولارًا (باستثناء ضريبة السلع والخدمات) لكمية طلب أقل من 200 لتر. للحصول على كمية طلب تبلغ 200 لتر وما فوق ، نفرض رسومًا بقيمة 1 يورو (باستثناء ضريبة السلع والخدمات) لكل لتر من الوقود المطلوب."
+            android:layout_marginTop="8dp"/>
+
+        <!-- معلومات الاتصال -->
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اتصل بنا: 734953951"
+            android:layout_marginTop="24dp"/>
+
+        <!-- روابط التواصل -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فيسبوك"
+                android:textColor="@color/blue"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تويتر"
+                android:textColor="@color/blue"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="يوتيوب"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
