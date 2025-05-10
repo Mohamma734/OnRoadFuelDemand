@@ -67,6 +67,12 @@
             android:name=".ProfileView"
             android:exported="false" />
         <activity
+            android:name=".AboutCompanyActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        
+        <activity
             android:name=".Register_map"
             android:exported="true"
             android:label="@string/title_activity_register_map" />
